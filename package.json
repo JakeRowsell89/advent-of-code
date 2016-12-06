@@ -1,0 +1,30 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "lint": "standard",
+    "dev": "chokidar '**/*.js' -c 'standard && ava'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "chokidar-cli": "^1.2.0",
+    "md5": "^2.2.1",
+    "precommit-hook": "^3.0.0",
+    "standard": "^8.6.0"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "standard": {
+    "ignore": [
+      "day5/md5.js"
+    ]
+  }
+}
