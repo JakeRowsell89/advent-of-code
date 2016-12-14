@@ -81,7 +81,7 @@ String.prototype.characterCount = function (character) { // eslint-disable-line
 }
 
 String.prototype.replaceAt = function (index, replacement) { // eslint-disable-line
-  let head = index === 0 ? this.slice(0, 0) : this.slice(0, index)
+  let head = this.slice(0, 0)
   let tail = this.slice(index + 1)
   return head.concat(replacement, tail)
 }
